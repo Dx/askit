@@ -1,0 +1,44 @@
+PODS:
+  - ApiAI (0.4.4):
+    - ApiAI/AudioFileConverter (= 0.4.4)
+    - ApiAI/Core (= 0.4.4)
+    - ApiAI/ResponseMapping (= 0.4.4)
+    - ApiAI/UIKit (= 0.4.4)
+    - ApiAI/VoiceFileRequest (= 0.4.4)
+    - ApiAI/VoiceRequest (= 0.4.4)
+  - ApiAI/AudioFileConverter (0.4.4):
+    - ApiAI/Core
+  - ApiAI/Core (0.4.4)
+  - ApiAI/ResponseMapping (0.4.4):
+    - ApiAI/Core (~> 1.1.0)
+  - ApiAI/UIKit (0.4.4):
+    - ApiAI/Core
+    - ApiAI/VoiceRequest
+  - ApiAI/VoiceFileRequest (0.4.4):
+    - ApiAI/Core
+  - ApiAI/VoiceRequest (0.4.4):
+    - ApiAI/Core
+  - KCOrderedAccessorFix (0.1.1)
+  - MBProgressHUD (0.9.2)
+
+DEPENDENCIES:
+  - ApiAI (from `../`)
+  - ApiAI/Core (from `../`)
+  - ApiAI/ResponseMapping (from `../`)
+  - ApiAI/UIKit (from `../`)
+  - ApiAI/VoiceRequest (from `../`)
+  - KCOrderedAccessorFix
+  - MBProgressHUD
+
+EXTERNAL SOURCES:
+  ApiAI:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ApiAI: 45f647172640ad015bc13da82a09d4d028846a17
+  KCOrderedAccessorFix: 53c6f2bb13c9a163590f414536eccd2f103e3189
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+
+PODFILE CHECKSUM: b977e553b7b95efa51985851ef5967d10af89212
+
+COCOAPODS: 1.0.0.beta.4

@@ -1,0 +1,33 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+use_frameworks!
+
+target 'ApiAIDemoWatchOSSwift' do
+    platform :ios, '9.2'
+	pod 'ApiAI', :path=> '../'
+	pod 'ApiAI/Core', :path => '../'
+	pod 'ApiAI/VoiceRequest', :path => '../'
+	pod 'ApiAI/UIKit', :path => '../'
+	pod 'ApiAI/ResponseMapping', :path => '../'
+	pod 'MBProgressHUD'
+	pod 'KCOrderedAccessorFix'
+end
+
+target 'ApiAIDemoWatchOSSwift WatchKit App' do
+    platform :ios, '9.2'
+	pod 'ApiAI', :path=> '../'
+	pod 'ApiAI/Core', :path => '../'
+	pod 'ApiAI/VoiceRequest', :path => '../'
+	pod 'ApiAI/UIKit', :path => '../'
+	pod 'ApiAI/ResponseMapping', :path => '../'
+	pod 'MBProgressHUD'
+end
+
+target 'ApiAIDemoWatchOSSwift WatchKit Extension' do
+    platform :watchos, '2.1'
+
+	pod 'ApiAI', :path=> '../'
+	pod 'ApiAI/Core', :path => '../'
+	pod 'ApiAI/ResponseMapping', :path => '../'
+end

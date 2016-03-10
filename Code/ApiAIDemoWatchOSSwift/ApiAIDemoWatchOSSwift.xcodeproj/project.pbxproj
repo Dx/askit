@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13A84318B8E9A79CEE1B2B47 /* Pods_ApiAIDemoWatchOSSwift_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D994FCB10C895919300610 /* Pods_ApiAIDemoWatchOSSwift_WatchKit_Extension.framework */; };
+		2F2ABB1415A2BEA505C6E51F /* Pods_ApiAIDemoWatchOSSwift_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACC1B8EE6631BC1B6AAFA0F /* Pods_ApiAIDemoWatchOSSwift_WatchKit_App.framework */; };
+		5819CEB51BD7798100CBF9C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819CEB41BD7798100CBF9C5 /* AppDelegate.swift */; };
+		5819CEBA1BD7798100CBF9C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5819CEB81BD7798100CBF9C5 /* Main.storyboard */; };
+		5819CEBC1BD7798100CBF9C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5819CEBB1BD7798100CBF9C5 /* Assets.xcassets */; };
+		5819CEBF1BD7798100CBF9C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5819CEBD1BD7798100CBF9C5 /* LaunchScreen.storyboard */; };
+		5819CEC41BD7798100CBF9C5 /* Askit.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5819CEC31BD7798100CBF9C5 /* Askit.app */; };
+		5819CECA1BD7798100CBF9C5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5819CEC81BD7798100CBF9C5 /* Interface.storyboard */; };
+		5819CECC1BD7798100CBF9C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5819CECB1BD7798100CBF9C5 /* Assets.xcassets */; };
+		5819CED31BD7798100CBF9C5 /* Ask it.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5819CED21BD7798100CBF9C5 /* Ask it.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5819CED81BD7798100CBF9C5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819CED71BD7798100CBF9C5 /* InterfaceController.swift */; };
+		5819CEDA1BD7798100CBF9C5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819CED91BD7798100CBF9C5 /* ExtensionDelegate.swift */; };
+		5819CEDC1BD7798100CBF9C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5819CEDB1BD7798100CBF9C5 /* Assets.xcassets */; };
+		E15FAB501C7DDCAF000CAA48 /* ClockKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15FAB4F1C7DDCAF000CAA48 /* ClockKit.framework */; };
+		E15FAB9D1C7DF9F6000CAA48 /* ComplicatonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FAB9C1C7DF9F6000CAA48 /* ComplicatonController.swift */; };
+		E1698DEC1C835DCA0033A6F0 /* VoiceButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1698DEB1C835DCA0033A6F0 /* VoiceButtonViewController.swift */; };
+		E1698DEE1C83609E0033A6F0 /* ApiAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1698DED1C83609E0033A6F0 /* ApiAI.framework */; };
+		E1698DF01C83626B0033A6F0 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1698DEF1C83626B0033A6F0 /* MBProgressHUD.framework */; };
+		E1698DFA1C8475CA0033A6F0 /* CoreDataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1698DF91C8475C90033A6F0 /* CoreDataStackManager.swift */; };
+		E1698DFE1C84777E0033A6F0 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1698DFD1C84777E0033A6F0 /* Product.swift */; };
+		E17511FB1C8FCA41005B9F2F /* CoreDataFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17511FA1C8FCA41005B9F2F /* CoreDataFunctions.swift */; };
+		E17511FD1C905A92005B9F2F /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17511FC1C905A92005B9F2F /* Serializable.swift */; };
+		E17511FF1C906EE6005B9F2F /* ApiAIResultInterpreterWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17511FE1C906EE6005B9F2F /* ApiAIResultInterpreterWatch.swift */; };
+		E17512011C90D65A005B9F2F /* ProductSerialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17512001C90D65A005B9F2F /* ProductSerialize.swift */; };
+		E17512031C913429005B9F2F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E17512021C913429005B9F2F /* icon.png */; };
+		E1B663B41C868C7F004504BD /* ListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B663B31C868C7F004504BD /* ListsViewController.swift */; };
+		E1B663B61C86925D004504BD /* ShoppingListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1B663B51C86925D004504BD /* ShoppingListCell.xib */; };
+		E1B663BC1C86A0A6004504BD /* ApiAIDemoWatchOSSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1B663BA1C86A0A6004504BD /* ApiAIDemoWatchOSSwift.xcdatamodeld */; };
+		E1B663BD1C86A0A6004504BD /* ApiAIDemoWatchOSSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1B663BA1C86A0A6004504BD /* ApiAIDemoWatchOSSwift.xcdatamodeld */; };
+		E1CE50291C8D5745002888E8 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CE50281C8D5745002888E8 /* logo.png */; };
+		E1CE502A1C8D5745002888E8 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CE50281C8D5745002888E8 /* logo.png */; };
+		E1CE502B1C8D5745002888E8 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E1CE50281C8D5745002888E8 /* logo.png */; };
+		E1DCF9241C8BF22B007495E7 /* ApiAIResultInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCF9231C8BF22B007495E7 /* ApiAIResultInterpreter.swift */; };
+		E1DCF9261C8C259F007495E7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCF9251C8C259F007495E7 /* TableViewCell.swift */; };
+		E1DCF9281C8C25E6007495E7 /* StrikeThroughText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DCF9271C8C25E6007495E7 /* StrikeThroughText.swift */; };
+		EC3F070A8DA32539842531AE /* Pods_ApiAIDemoWatchOSSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B355042685D35511F8BFF0C5 /* Pods_ApiAIDemoWatchOSSwift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5819CEC51BD7798100CBF9C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5819CEA91BD7798100CBF9C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5819CEC21BD7798100CBF9C5;
+			remoteInfo = "ApiAIDemoWatchOSSwift WatchKit App";
+		};
+		5819CED41BD7798100CBF9C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5819CEA91BD7798100CBF9C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5819CED11BD7798100CBF9C5;
+			remoteInfo = "ApiAIDemoWatchOSSwift WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5819CEE31BD7798100CBF9C5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5819CED31BD7798100CBF9C5 /* Ask it.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5819CEE71BD7798100CBF9C5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5819CEC41BD7798100CBF9C5 /* Askit.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07A7E4401DCA958A3D14FF69 /* Pods-ApiAIDemoWatchOSSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiAIDemoWatchOSSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApiAIDemoWatchOSSwift/Pods-ApiAIDemoWatchOSSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		2724E29980897A3CDF0A11D2 /* Pods-ApiAIDemoWatchOSSwift WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiAIDemoWatchOSSwift WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApiAIDemoWatchOSSwift WatchKit Extension/Pods-ApiAIDemoWatchOSSwift WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		309DE314D638589BEDBCF79E /* Pods-ApiAIDemoWatchOSSwift WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiAIDemoWatchOSSwift WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApiAIDemoWatchOSSwift WatchKit Extension/Pods-ApiAIDemoWatchOSSwift WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		3ACC1B8EE6631BC1B6AAFA0F /* Pods_ApiAIDemoWatchOSSwift_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiAIDemoWatchOSSwift_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5819CEB11BD7798100CBF9C5 /* Askit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Askit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5819CEB41BD7798100CBF9C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5819CEB91BD7798100CBF9C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5819CEBB1BD7798100CBF9C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5819CEBE1BD7798100CBF9C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5819CEC01BD7798100CBF9C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5819CEC31BD7798100CBF9C5 /* Askit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Askit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5819CEC91BD7798100CBF9C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5819CECB1BD7798100CBF9C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5819CECD1BD7798100CBF9C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5819CED21BD7798100CBF9C5 /* Ask it.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Ask it.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5819CED71BD7798100CBF9C5 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5819CED91BD7798100CBF9C5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5819CEDB1BD7798100CBF9C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5819CEDD1BD7798100CBF9C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65278AD2DE319708E9A8FB64 /* Pods-ApiAIDemoWatchOSSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiAIDemoWatchOSSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApiAIDemoWatchOSSwift/Pods-ApiAIDemoWatchOSSwift.release.xcconfig"; sourceTree = "<group>"; };
+		76054369BD4BE9028A5DA674 /* Pods-ApiAIDemoWatchOSSwift WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiAIDemoWatchOSSwift WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApiAIDemoWatchOSSwift WatchKit App/Pods-ApiAIDemoWatchOSSwift WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		9420835DF1494021374C999E /* Pods-ApiAIDemoWatchOSSwift WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiAIDemoWatchOSSwift WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApiAIDemoWatchOSSwift WatchKit App/Pods-ApiAIDemoWatchOSSwift WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		B355042685D35511F8BFF0C5 /* Pods_ApiAIDemoWatchOSSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiAIDemoWatchOSSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E15FAB4F1C7DDCAF000CAA48 /* ClockKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ClockKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/System/Library/Frameworks/ClockKit.framework; sourceTree = DEVELOPER_DIR; };
+		E15FAB9C1C7DF9F6000CAA48 /* ComplicatonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicatonController.swift; sourceTree = "<group>"; };
+		E1698DEB1C835DCA0033A6F0 /* VoiceButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceButtonViewController.swift; sourceTree = "<group>"; };
+		E1698DED1C83609E0033A6F0 /* ApiAI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApiAI.framework; path = "Pods/../build/Debug-iphoneos/ApiAI/ApiAI.framework"; sourceTree = "<group>"; };
+		E1698DEF1C83626B0033A6F0 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = "Pods/../build/Debug-iphoneos/MBProgressHUD/MBProgressHUD.framework"; sourceTree = "<group>"; };
+		E1698DF91C8475C90033A6F0 /* CoreDataStackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackManager.swift; sourceTree = "<group>"; };
+		E1698DFD1C84777E0033A6F0 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		E17511FA1C8FCA41005B9F2F /* CoreDataFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataFunctions.swift; sourceTree = "<group>"; };
+		E17511FC1C905A92005B9F2F /* Serializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializable.swift; sourceTree = "<group>"; };
+		E17511FE1C906EE6005B9F2F /* ApiAIResultInterpreterWatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiAIResultInterpreterWatch.swift; sourceTree = "<group>"; };
+		E17512001C90D65A005B9F2F /* ProductSerialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSerialize.swift; sourceTree = "<group>"; };
+		E17512021C913429005B9F2F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		E1B663B31C868C7F004504BD /* ListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsViewController.swift; sourceTree = "<group>"; };
+		E1B663B51C86925D004504BD /* ShoppingListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingListCell.xib; sourceTree = "<group>"; };
+		E1B663BB1C86A0A6004504BD /* ShoppingLIsts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoppingLIsts.xcdatamodel; sourceTree = "<group>"; };
+		E1CE50281C8D5745002888E8 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		E1DCF9231C8BF22B007495E7 /* ApiAIResultInterpreter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiAIResultInterpreter.swift; sourceTree = "<group>"; };
+		E1DCF9251C8C259F007495E7 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E1DCF9271C8C25E6007495E7 /* StrikeThroughText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrikeThroughText.swift; sourceTree = "<group>"; };
+		E3D994FCB10C895919300610 /* Pods_ApiAIDemoWatchOSSwift_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiAIDemoWatchOSSwift_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5819CEAE1BD7798100CBF9C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1698DF01C83626B0033A6F0 /* MBProgressHUD.framework in Frameworks */,
+				E1698DEE1C83609E0033A6F0 /* ApiAI.framework in Frameworks */,
+				EC3F070A8DA32539842531AE /* Pods_ApiAIDemoWatchOSSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5819CECF1BD7798100CBF9C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E15FAB501C7DDCAF000CAA48 /* ClockKit.framework in Frameworks */,
+				13A84318B8E9A79CEE1B2B47 /* Pods_ApiAIDemoWatchOSSwift_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CAFC12775CB6D580F54B356 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2ABB1415A2BEA505C6E51F /* Pods_ApiAIDemoWatchOSSwift_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5819CEA81BD7798100CBF9C5 = {
+			isa = PBXGroup;
+			children = (
+				5819CEB31BD7798100CBF9C5 /* ApiAIDemoWatchOSSwift */,
+				5819CEC71BD7798100CBF9C5 /* ApiAIDemoWatchOSSwift WatchKit App */,
+				5819CED61BD7798100CBF9C5 /* ApiAIDemoWatchOSSwift WatchKit Extension */,
+				5819CEB21BD7798100CBF9C5 /* Products */,
+				7B81CC13446666DAAC2E5F41 /* Pods */,
+				9BC64D188C009065F4D4451E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5819CEB21BD7798100CBF9C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5819CEB11BD7798100CBF9C5 /* Askit.app */,
+				5819CEC31BD7798100CBF9C5 /* Askit.app */,
+				5819CED21BD7798100CBF9C5 /* Ask it.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5819CEB31BD7798100CBF9C5 /* ApiAIDemoWatchOSSwift */ = {
+			isa = PBXGroup;
+			children = (
+				5819CEB41BD7798100CBF9C5 /* AppDelegate.swift */,
+				E1698DF31C8363170033A6F0 /* Models */,
+				E1698DF21C8363110033A6F0 /* Controllers */,
+				E1698DF11C8363090033A6F0 /* Views */,
+				5819CEBB1BD7798100CBF9C5 /* Assets.xcassets */,
+				5819CEC01BD7798100CBF9C5 /* Info.plist */,
+			);
+			path = ApiAIDemoWatchOSSwift;
+			sourceTree = "<group>";
+		};
+		5819CEC71BD7798100CBF9C5 /* ApiAIDemoWatchOSSwift WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5819CEC81BD7798100CBF9C5 /* Interface.storyboard */,
+				5819CECB1BD7798100CBF9C5 /* Assets.xcassets */,
+				5819CECD1BD7798100CBF9C5 /* Info.plist */,
+			);
+			path = "ApiAIDemoWatchOSSwift WatchKit App";
+			sourceTree = "<group>";
+		};
+		5819CED61BD7798100CBF9C5 /* ApiAIDemoWatchOSSwift WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E17512021C913429005B9F2F /* icon.png */,
+				5819CED71BD7798100CBF9C5 /* InterfaceController.swift */,
+				5819CED91BD7798100CBF9C5 /* ExtensionDelegate.swift */,
+				5819CEDB1BD7798100CBF9C5 /* Assets.xcassets */,
+				5819CEDD1BD7798100CBF9C5 /* Info.plist */,
+				E15FAB9C1C7DF9F6000CAA48 /* ComplicatonController.swift */,
+				E17511FC1C905A92005B9F2F /* Serializable.swift */,
+				E17511FE1C906EE6005B9F2F /* ApiAIResultInterpreterWatch.swift */,
+				E17512001C90D65A005B9F2F /* ProductSerialize.swift */,
+			);
+			path = "ApiAIDemoWatchOSSwift WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		7B81CC13446666DAAC2E5F41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07A7E4401DCA958A3D14FF69 /* Pods-ApiAIDemoWatchOSSwift.debug.xcconfig */,
+				65278AD2DE319708E9A8FB64 /* Pods-ApiAIDemoWatchOSSwift.release.xcconfig */,
+				76054369BD4BE9028A5DA674 /* Pods-ApiAIDemoWatchOSSwift WatchKit App.debug.xcconfig */,
+				9420835DF1494021374C999E /* Pods-ApiAIDemoWatchOSSwift WatchKit App.release.xcconfig */,
+				2724E29980897A3CDF0A11D2 /* Pods-ApiAIDemoWatchOSSwift WatchKit Extension.debug.xcconfig */,
+				309DE314D638589BEDBCF79E /* Pods-ApiAIDemoWatchOSSwift WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9BC64D188C009065F4D4451E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1698DEF1C83626B0033A6F0 /* MBProgressHUD.framework */,
+				E1698DED1C83609E0033A6F0 /* ApiAI.framework */,
+				E15FAB4F1C7DDCAF000CAA48 /* ClockKit.framework */,
+				B355042685D35511F8BFF0C5 /* Pods_ApiAIDemoWatchOSSwift.framework */,
+				3ACC1B8EE6631BC1B6AAFA0F /* Pods_ApiAIDemoWatchOSSwift_WatchKit_App.framework */,
+				E3D994FCB10C895919300610 /* Pods_ApiAIDemoWatchOSSwift_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1698DF11C8363090033A6F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5819CEB81BD7798100CBF9C5 /* Main.storyboard */,
+				5819CEBD1BD7798100CBF9C5 /* LaunchScreen.storyboard */,
+				E1CE50281C8D5745002888E8 /* logo.png */,
+				E1B663B51C86925D004504BD /* ShoppingListCell.xib */,
+				E1DCF9251C8C259F007495E7 /* TableViewCell.swift */,
+				E1DCF9271C8C25E6007495E7 /* StrikeThroughText.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E1698DF21C8363110033A6F0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E1698DEB1C835DCA0033A6F0 /* VoiceButtonViewController.swift */,
+				E1B663B31C868C7F004504BD /* ListsViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E1698DF31C8363170033A6F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1B663BA1C86A0A6004504BD /* ApiAIDemoWatchOSSwift.xcdatamodeld */,
+				E1698DF91C8475C90033A6F0 /* CoreDataStackManager.swift */,
+				E1698DFD1C84777E0033A6F0 /* Product.swift */,
+				E1DCF9231C8BF22B007495E7 /* ApiAIResultInterpreter.swift */,
+				E17511FA1C8FCA41005B9F2F /* CoreDataFunctions.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5819CEB01BD7798100CBF9C5 /* ApiAIDemoWatchOSSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5819CEE81BD7798100CBF9C5 /* Build configuration list for PBXNativeTarget "ApiAIDemoWatchOSSwift" */;
+			buildPhases = (
+				3749F72876952883CB750E04 /* Check Pods Manifest.lock */,
+				5819CEAD1BD7798100CBF9C5 /* Sources */,
+				5819CEAE1BD7798100CBF9C5 /* Frameworks */,
+				5819CEAF1BD7798100CBF9C5 /* Resources */,
+				5819CEE71BD7798100CBF9C5 /* Embed Watch Content */,
+				C2C49592416A7985049F0ABB /* Embed Pods Frameworks */,
+				5D023CF0309835AE6A8BFD23 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5819CEC61BD7798100CBF9C5 /* PBXTargetDependency */,
+			);
+			name = ApiAIDemoWatchOSSwift;
+			productName = ApiAIDemoWatchOSSwift;
+			productReference = 5819CEB11BD7798100CBF9C5 /* Askit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5819CEC21BD7798100CBF9C5 /* ApiAIDemoWatchOSSwift WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5819CEE41BD7798100CBF9C5 /* Build configuration list for PBXNativeTarget "ApiAIDemoWatchOSSwift WatchKit App" */;
+			buildPhases = (
+				2E651DB138D9BA5FA8F91945 /* Check Pods Manifest.lock */,
+				5819CEC11BD7798100CBF9C5 /* Resources */,
+				5819CEE31BD7798100CBF9C5 /* Embed App Extensions */,
+				5CAFC12775CB6D580F54B356 /* Frameworks */,
+				BB930814C930F3F6ACC8C8CA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5819CED51BD7798100CBF9C5 /* PBXTargetDependency */,
+			);
+			name = "ApiAIDemoWatchOSSwift WatchKit App";
+			productName = "ApiAIDemoWatchOSSwift WatchKit App";
+			productReference = 5819CEC31BD7798100CBF9C5 /* Askit.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5819CED11BD7798100CBF9C5 /* ApiAIDemoWatchOSSwift WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5819CEE01BD7798100CBF9C5 /* Build configuration list for PBXNativeTarget "ApiAIDemoWatchOSSwift WatchKit Extension" */;
+			buildPhases = (
+				DB7C0FF38624FFA1332105EA /* Check Pods Manifest.lock */,
+				5819CECE1BD7798100CBF9C5 /* Sources */,
+				5819CECF1BD7798100CBF9C5 /* Frameworks */,
+				5819CED01BD7798100CBF9C5 /* Resources */,
+				341764B9D05BC102BDC2C9A9 /* Embed Pods Frameworks */,
+				BDFD26C3520E1255CE25B433 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ApiAIDemoWatchOSSwift WatchKit Extension";
+			productName = "ApiAIDemoWatchOSSwift WatchKit Extension";
+			productReference = 5819CED21BD7798100CBF9C5 /* Ask it.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5819CEA91BD7798100CBF9C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Kuragin Dmitriy";
+				TargetAttributes = {
+					5819CEB01BD7798100CBF9C5 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = J42N2J85M6;
+					};
+					5819CEC21BD7798100CBF9C5 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = J42N2J85M6;
+					};
+					5819CED11BD7798100CBF9C5 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = J42N2J85M6;
+					};
+				};
+			};
+			buildConfigurationList = 5819CEAC1BD7798100CBF9C5 /* Build configuration list for PBXProject "ApiAIDemoWatchOSSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5819CEA81BD7798100CBF9C5;
+			productRefGroup = 5819CEB21BD7798100CBF9C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5819CEB01BD7798100CBF9C5 /* ApiAIDemoWatchOSSwift */,
+				5819CEC21BD7798100CBF9C5 /* ApiAIDemoWatchOSSwift WatchKit App */,
+				5819CED11BD7798100CBF9C5 /* ApiAIDemoWatchOSSwift WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5819CEAF1BD7798100CBF9C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5819CEBF1BD7798100CBF9C5 /* LaunchScreen.storyboard in Resources */,
+				E1CE50291C8D5745002888E8 /* logo.png in Resources */,
+				E1B663B61C86925D004504BD /* ShoppingListCell.xib in Resources */,
+				5819CEBC1BD7798100CBF9C5 /* Assets.xcassets in Resources */,
+				5819CEBA1BD7798100CBF9C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5819CEC11BD7798100CBF9C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5819CECC1BD7798100CBF9C5 /* Assets.xcassets in Resources */,
+				5819CECA1BD7798100CBF9C5 /* Interface.storyboard in Resources */,
+				E1CE502A1C8D5745002888E8 /* logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5819CED01BD7798100CBF9C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17512031C913429005B9F2F /* icon.png in Resources */,
+				5819CEDC1BD7798100CBF9C5 /* Assets.xcassets in Resources */,
+				E1CE502B1C8D5745002888E8 /* logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E651DB138D9BA5FA8F91945 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		341764B9D05BC102BDC2C9A9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApiAIDemoWatchOSSwift WatchKit Extension/Pods-ApiAIDemoWatchOSSwift WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3749F72876952883CB750E04 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5D023CF0309835AE6A8BFD23 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApiAIDemoWatchOSSwift/Pods-ApiAIDemoWatchOSSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB930814C930F3F6ACC8C8CA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApiAIDemoWatchOSSwift WatchKit App/Pods-ApiAIDemoWatchOSSwift WatchKit App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDFD26C3520E1255CE25B433 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApiAIDemoWatchOSSwift WatchKit Extension/Pods-ApiAIDemoWatchOSSwift WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2C49592416A7985049F0ABB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApiAIDemoWatchOSSwift/Pods-ApiAIDemoWatchOSSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB7C0FF38624FFA1332105EA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5819CEAD1BD7798100CBF9C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1698DFE1C84777E0033A6F0 /* Product.swift in Sources */,
+				E1B663B41C868C7F004504BD /* ListsViewController.swift in Sources */,
+				E17511FB1C8FCA41005B9F2F /* CoreDataFunctions.swift in Sources */,
+				E1DCF9281C8C25E6007495E7 /* StrikeThroughText.swift in Sources */,
+				E1698DEC1C835DCA0033A6F0 /* VoiceButtonViewController.swift in Sources */,
+				E1DCF9261C8C259F007495E7 /* TableViewCell.swift in Sources */,
+				E1DCF9241C8BF22B007495E7 /* ApiAIResultInterpreter.swift in Sources */,
+				E1B663BC1C86A0A6004504BD /* ApiAIDemoWatchOSSwift.xcdatamodeld in Sources */,
+				5819CEB51BD7798100CBF9C5 /* AppDelegate.swift in Sources */,
+				E1698DFA1C8475CA0033A6F0 /* CoreDataStackManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5819CECE1BD7798100CBF9C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17512011C90D65A005B9F2F /* ProductSerialize.swift in Sources */,
+				5819CEDA1BD7798100CBF9C5 /* ExtensionDelegate.swift in Sources */,
+				E17511FD1C905A92005B9F2F /* Serializable.swift in Sources */,
+				E17511FF1C906EE6005B9F2F /* ApiAIResultInterpreterWatch.swift in Sources */,
+				E1B663BD1C86A0A6004504BD /* ApiAIDemoWatchOSSwift.xcdatamodeld in Sources */,
+				E15FAB9D1C7DF9F6000CAA48 /* ComplicatonController.swift in Sources */,
+				5819CED81BD7798100CBF9C5 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5819CEC61BD7798100CBF9C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5819CEC21BD7798100CBF9C5 /* ApiAIDemoWatchOSSwift WatchKit App */;
+			targetProxy = 5819CEC51BD7798100CBF9C5 /* PBXContainerItemProxy */;
+		};
+		5819CED51BD7798100CBF9C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5819CED11BD7798100CBF9C5 /* ApiAIDemoWatchOSSwift WatchKit Extension */;
+			targetProxy = 5819CED41BD7798100CBF9C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5819CEB81BD7798100CBF9C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5819CEB91BD7798100CBF9C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5819CEBD1BD7798100CBF9C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5819CEBE1BD7798100CBF9C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5819CEC81BD7798100CBF9C5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5819CEC91BD7798100CBF9C5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5819CEDE1BD7798100CBF9C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5819CEDF1BD7798100CBF9C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5819CEE11BD7798100CBF9C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2724E29980897A3CDF0A11D2 /* Pods-ApiAIDemoWatchOSSwift WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "ApiAIDemoWatchOSSwift WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.palmera.Askit.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "Ask it";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		5819CEE21BD7798100CBF9C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 309DE314D638589BEDBCF79E /* Pods-ApiAIDemoWatchOSSwift WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "ApiAIDemoWatchOSSwift WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.palmera.Askit.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "Ask it";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		5819CEE51BD7798100CBF9C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76054369BD4BE9028A5DA674 /* Pods-ApiAIDemoWatchOSSwift WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ApiAIDemoWatchOSSwift_WatchKit_Extension;
+				INFOPLIST_FILE = "ApiAIDemoWatchOSSwift WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.palmera.Askit.watchkitapp;
+				PRODUCT_NAME = Askit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		5819CEE61BD7798100CBF9C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9420835DF1494021374C999E /* Pods-ApiAIDemoWatchOSSwift WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ApiAIDemoWatchOSSwift_WatchKit_Extension;
+				INFOPLIST_FILE = "ApiAIDemoWatchOSSwift WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.palmera.Askit.watchkitapp;
+				PRODUCT_NAME = Askit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		5819CEE91BD7798100CBF9C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A7E4401DCA958A3D14FF69 /* Pods-ApiAIDemoWatchOSSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ApiAI",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/MBProgressHUD",
+				);
+				INFOPLIST_FILE = ApiAIDemoWatchOSSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.palmera.Askit;
+				PRODUCT_NAME = Askit;
+			};
+			name = Debug;
+		};
+		5819CEEA1BD7798100CBF9C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65278AD2DE319708E9A8FB64 /* Pods-ApiAIDemoWatchOSSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ApiAI",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/MBProgressHUD",
+				);
+				INFOPLIST_FILE = ApiAIDemoWatchOSSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.palmera.Askit;
+				PRODUCT_NAME = Askit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5819CEAC1BD7798100CBF9C5 /* Build configuration list for PBXProject "ApiAIDemoWatchOSSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5819CEDE1BD7798100CBF9C5 /* Debug */,
+				5819CEDF1BD7798100CBF9C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5819CEE01BD7798100CBF9C5 /* Build configuration list for PBXNativeTarget "ApiAIDemoWatchOSSwift WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5819CEE11BD7798100CBF9C5 /* Debug */,
+				5819CEE21BD7798100CBF9C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5819CEE41BD7798100CBF9C5 /* Build configuration list for PBXNativeTarget "ApiAIDemoWatchOSSwift WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5819CEE51BD7798100CBF9C5 /* Debug */,
+				5819CEE61BD7798100CBF9C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5819CEE81BD7798100CBF9C5 /* Build configuration list for PBXNativeTarget "ApiAIDemoWatchOSSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5819CEE91BD7798100CBF9C5 /* Debug */,
+				5819CEEA1BD7798100CBF9C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E1B663BA1C86A0A6004504BD /* ApiAIDemoWatchOSSwift.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E1B663BB1C86A0A6004504BD /* ShoppingLIsts.xcdatamodel */,
+			);
+			currentVersion = E1B663BB1C86A0A6004504BD /* ShoppingLIsts.xcdatamodel */;
+			path = ApiAIDemoWatchOSSwift.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5819CEA91BD7798100CBF9C5 /* Project object */;
+}

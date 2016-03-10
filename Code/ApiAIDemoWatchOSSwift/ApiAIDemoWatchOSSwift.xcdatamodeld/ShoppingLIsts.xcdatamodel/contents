@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Xcode 7.0">
+    <entity name="Product" syncable="YES">
+        <attribute name="checked" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="unity" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="shoppingList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ShoppingList" inverseName="products" inverseEntity="ShoppingList" syncable="YES"/>
+    </entity>
+    <entity name="ShoppingList" representedClassName="ShoppingList" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="products" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Product" inverseName="shoppingList" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Product" positionX="-54" positionY="-9" width="128" height="120"/>
+        <element name="ShoppingList" positionX="-63" positionY="-18" width="128" height="75"/>
+    </elements>
+</model>

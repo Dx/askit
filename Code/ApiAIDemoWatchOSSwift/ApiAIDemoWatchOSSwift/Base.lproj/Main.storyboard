@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7PM-dP-8Pi">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Pyc-Gz-jvS">
+            <objects>
+                <tabBarController id="7PM-dP-8Pi" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="VK9-gT-7Qr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vJO-5p-JOp" kind="relationship" relationship="viewControllers" id="rIC-6m-U7x"/>
+                        <segue destination="dkK-f1-isb" kind="relationship" relationship="viewControllers" id="n9j-Yd-I1O"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V4o-wl-iQo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94" y="-544"/>
+        </scene>
+        <!--Lists View Controller-->
+        <scene sceneID="fNd-1U-LPB">
+            <objects>
+                <tableViewController id="dkK-f1-isb" customClass="ListsViewController" customModule="Askit" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PcB-QN-BjV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="dkK-f1-isb" id="l2e-jW-1vo"/>
+                            <outlet property="delegate" destination="dkK-f1-isb" id="p9P-NG-drX"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" systemItem="more" id="0p3-pw-7gh"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oVx-vI-XI2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="-1029"/>
+        </scene>
+        <!--Voice Button View Controller-->
+        <scene sceneID="ylY-XM-G2w">
+            <objects>
+                <viewController id="vJO-5p-JOp" customClass="VoiceButtonViewController" customModule="Askit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5kV-8Q-SLK"/>
+                        <viewControllerLayoutGuide type="bottom" id="eVX-7x-uRk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K0e-NO-f5u">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="sGC-fM-TNq">
+                                <rect key="frame" x="20" y="226" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="XQX-YY-Kvr">
+                                <rect key="frame" x="264" y="260" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="EBw-1a-fiL"/>
+                                    <constraint firstAttribute="width" constant="72" id="esW-YX-Pxe"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDI-NU-0vQ" customClass="AIVoiceRequestButton">
+                                <rect key="frame" x="264" y="264" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="Fv4-9a-HY7"/>
+                                    <constraint firstAttribute="height" constant="72" id="Owr-hR-tQE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask it" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8Y-Fy-ab0">
+                                <rect key="frame" x="266" y="91" width="69" height="48"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XQX-YY-Kvr" firstAttribute="centerX" secondItem="K0e-NO-f5u" secondAttribute="centerX" id="3zY-CU-cv3"/>
+                            <constraint firstItem="o8Y-Fy-ab0" firstAttribute="centerX" secondItem="K0e-NO-f5u" secondAttribute="centerX" id="9fs-j8-LHF"/>
+                            <constraint firstItem="XQX-YY-Kvr" firstAttribute="centerX" secondItem="K0e-NO-f5u" secondAttribute="centerX" id="MLC-o6-QjU"/>
+                            <constraint firstItem="sGC-fM-TNq" firstAttribute="leading" secondItem="K0e-NO-f5u" secondAttribute="leadingMargin" id="WqS-Yf-CUY"/>
+                            <constraint firstAttribute="centerX" secondItem="uDI-NU-0vQ" secondAttribute="centerX" id="fuj-sf-T5L"/>
+                            <constraint firstItem="uDI-NU-0vQ" firstAttribute="centerX" secondItem="K0e-NO-f5u" secondAttribute="centerX" id="i2c-YI-uv6"/>
+                            <constraint firstItem="XQX-YY-Kvr" firstAttribute="top" secondItem="sGC-fM-TNq" secondAttribute="bottom" constant="4" id="lPc-PR-iSI"/>
+                            <constraint firstItem="sGC-fM-TNq" firstAttribute="top" secondItem="o8Y-Fy-ab0" secondAttribute="bottom" constant="87" id="naR-aY-b0P"/>
+                            <constraint firstItem="sGC-fM-TNq" firstAttribute="centerX" secondItem="K0e-NO-f5u" secondAttribute="centerX" id="tCd-dt-Xyy"/>
+                            <constraint firstItem="uDI-NU-0vQ" firstAttribute="top" secondItem="sGC-fM-TNq" secondAttribute="bottom" constant="8" id="tcy-Ya-oqx"/>
+                            <constraint firstAttribute="centerY" secondItem="uDI-NU-0vQ" secondAttribute="centerY" id="tvZ-jc-plt"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="MRB-6m-q8Q"/>
+                    <navigationItem key="navigationItem" id="rRn-rN-NBT"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="buttonView" destination="XQX-YY-Kvr" id="fR5-eA-QLx"/>
+                        <outlet property="searchText" destination="sGC-fM-TNq" id="Xeo-N8-rAE"/>
+                        <outlet property="voiceRequestButton" destination="uDI-NU-0vQ" id="3g4-eP-Abp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2g3-ju-sPY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="-295"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo.png" width="378" height="337"/>
+    </resources>
+</document>

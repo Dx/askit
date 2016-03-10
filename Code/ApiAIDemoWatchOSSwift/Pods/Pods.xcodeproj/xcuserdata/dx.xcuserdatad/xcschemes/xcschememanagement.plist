@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>ApiAI.root-Core-ResponseMapping-VoiceFileRequest.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ApiAI.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>KCOrderedAccessorFix.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ApiAIDemoWatchOSSwift WatchKit App.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ApiAIDemoWatchOSSwift WatchKit Extension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ApiAIDemoWatchOSSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0C1E44EF41EA4809C76B9D61D8819329</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2D08469B8945E82C961FE5CFF06084BA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>689E34F88083953FC54B1F25DCDE2084</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>786DBE9FCCDDCBA7CF8089D92749ED4D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>92475A7B4AEB89A1CAFB5802FD2914AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A7301F2DD6BE9DC770069B80E08BB7D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E61CE3B6DFA1FE6B3E296965C76C0E10</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

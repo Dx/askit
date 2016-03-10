@@ -1,0 +1,6 @@
+framework module ApiAI {
+  umbrella header "ApiAI.root-Core-ResponseMapping-VoiceFileRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}

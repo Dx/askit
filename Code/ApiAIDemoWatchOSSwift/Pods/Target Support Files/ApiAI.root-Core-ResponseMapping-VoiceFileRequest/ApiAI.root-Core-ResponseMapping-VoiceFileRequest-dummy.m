@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_ApiAI_root_Core_ResponseMapping_VoiceFileRequest : NSObject
+@end
+@implementation PodsDummy_ApiAI_root_Core_ResponseMapping_VoiceFileRequest
+@end
