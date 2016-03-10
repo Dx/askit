@@ -13,6 +13,9 @@ This is a shopping list. You can use voice commands to add products. It is desig
 It uses <a href="http://api.ai">api.ai</a> to analize voice and parse commands.
 
 ## <a name="howtouseit"></a>How to use it
+* To open de project, do a 'pod install' and then open 
+     Code/ApiAIDemoWatchOSSwift/ApiAIDemoWatchOSSwift.xcworkspace
+
 * It can be used with text input or voice
 * To use text input, just write something like "Pan" or "Leche".
 * To use voice, tap the button in the center, and speak the name of a product "Pan" or "Huevo".
