@@ -1,11 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7PM-dP-8Pi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="A44-OB-7JC">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Language View Controller-->
+        <scene sceneID="4UD-UM-TbV">
+            <objects>
+                <viewController id="A44-OB-7JC" customClass="LanguageViewController" customModule="Askit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hEq-fj-Ssg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rg8-rM-VY9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RBr-YK-MGs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask it" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hv9-Nd-VcO">
+                                <rect key="frame" x="266" y="38" width="69" height="48"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please choose your language" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3e-LF-gPG">
+                                <rect key="frame" x="164" y="178" width="272" height="40"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Qrw-8B-lrw">
+                                <rect key="frame" x="238" y="286" width="125" height="29"/>
+                                <segments>
+                                    <segment title="English"/>
+                                    <segment title="Español"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Por favor elige tu idioma" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4r-Bk-Hg7">
+                                <rect key="frame" x="186" y="214" width="228" height="40"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1k8-l3-Jn4">
+                                <rect key="frame" x="264" y="359" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="NaX-dd-YAh"/>
+                                    <constraint firstAttribute="width" constant="72" id="uQm-Ng-xhG"/>
+                                </constraints>
+                                <state key="normal" image="logo.png"/>
+                                <connections>
+                                    <action selector="LanguageSelected:" destination="A44-OB-7JC" eventType="touchUpInside" id="pmc-aE-mFl"/>
+                                    <segue destination="7PM-dP-8Pi" kind="show" id="Fq8-mE-g8n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qrw-8B-lrw" firstAttribute="centerY" secondItem="RBr-YK-MGs" secondAttribute="centerY" id="760-1f-e8n"/>
+                            <constraint firstItem="Qrw-8B-lrw" firstAttribute="centerX" secondItem="RBr-YK-MGs" secondAttribute="centerX" id="DGI-9c-dVq"/>
+                            <constraint firstItem="1k8-l3-Jn4" firstAttribute="centerX" secondItem="RBr-YK-MGs" secondAttribute="centerX" id="Ica-eZ-HDC"/>
+                            <constraint firstItem="Qrw-8B-lrw" firstAttribute="top" secondItem="b4r-Bk-Hg7" secondAttribute="bottom" constant="32" id="LFn-ZM-8zU"/>
+                            <constraint firstItem="1k8-l3-Jn4" firstAttribute="top" secondItem="Qrw-8B-lrw" secondAttribute="bottom" constant="45" id="c19-xP-ib7"/>
+                            <constraint firstItem="b4r-Bk-Hg7" firstAttribute="centerX" secondItem="RBr-YK-MGs" secondAttribute="centerX" id="fq7-oC-0e6"/>
+                            <constraint firstItem="b4r-Bk-Hg7" firstAttribute="top" secondItem="f3e-LF-gPG" secondAttribute="bottom" constant="-4" id="lff-Jk-oKw"/>
+                            <constraint firstItem="hv9-Nd-VcO" firstAttribute="centerX" secondItem="RBr-YK-MGs" secondAttribute="centerX" id="tBn-tp-E6M"/>
+                            <constraint firstItem="f3e-LF-gPG" firstAttribute="centerX" secondItem="RBr-YK-MGs" secondAttribute="centerX" id="vvm-j6-Stp"/>
+                            <constraint firstItem="f3e-LF-gPG" firstAttribute="top" secondItem="hv9-Nd-VcO" secondAttribute="bottom" constant="92" id="xU5-zU-8zy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="languageOptions" destination="Qrw-8B-lrw" id="zJw-ya-KoW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AMi-hd-Qde" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-577" y="-544"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Pyc-Gz-jvS">
             <objects>

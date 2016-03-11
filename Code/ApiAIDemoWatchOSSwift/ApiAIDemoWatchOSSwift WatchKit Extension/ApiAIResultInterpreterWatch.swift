@@ -12,7 +12,7 @@ import ApiAI
 class ApiAIResultInterpreterWatch {
     func getProduct(response: AIResponse) -> ProductSerialize {
         
-        var productSerialize = ProductSerialize()
+        let productSerialize = ProductSerialize()
         let status = response.status
         let code = status.code
         

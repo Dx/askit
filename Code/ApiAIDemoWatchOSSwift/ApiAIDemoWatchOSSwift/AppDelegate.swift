@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let configuration = AIDefaultConfiguration()
         
         configuration.clientAccessToken = "4b0fe7886274402481279dc53c2e1006"
+        //configuration.clientAccessToken = "2c47adb2a8a5435586590e680b461d07"
         configuration.subscriptionKey = "d835f1ea-dd79-480d-9522-e3579cac3f2d"
         
         ApiAI.sharedApiAI().configuration = configuration
@@ -49,7 +50,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 

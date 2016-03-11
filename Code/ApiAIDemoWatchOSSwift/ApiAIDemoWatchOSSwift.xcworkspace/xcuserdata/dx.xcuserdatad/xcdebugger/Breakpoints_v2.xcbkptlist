@@ -278,7 +278,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ApiAIDemoWatchOSSwift/ApiAIResultInterpreter.swift"
@@ -368,6 +368,22 @@
             startingLineNumber = "65"
             endingLineNumber = "65"
             landmarkName = "textRequest()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ApiAIDemoWatchOSSwift/LanguageViewController.swift"
+            timestampString = "479365149.304485"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "LanguageSelected(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

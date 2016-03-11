@@ -20,6 +20,7 @@
 		5819CED81BD7798100CBF9C5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819CED71BD7798100CBF9C5 /* InterfaceController.swift */; };
 		5819CEDA1BD7798100CBF9C5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5819CED91BD7798100CBF9C5 /* ExtensionDelegate.swift */; };
 		5819CEDC1BD7798100CBF9C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5819CEDB1BD7798100CBF9C5 /* Assets.xcassets */; };
+		E1010B0F1C92861900A08A86 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1010B0E1C92861900A08A86 /* LanguageViewController.swift */; };
 		E15FAB501C7DDCAF000CAA48 /* ClockKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15FAB4F1C7DDCAF000CAA48 /* ClockKit.framework */; };
 		E15FAB9D1C7DF9F6000CAA48 /* ComplicatonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FAB9C1C7DF9F6000CAA48 /* ComplicatonController.swift */; };
 		E1698DEC1C835DCA0033A6F0 /* VoiceButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1698DEB1C835DCA0033A6F0 /* VoiceButtonViewController.swift */; };
@@ -111,6 +112,7 @@
 		76054369BD4BE9028A5DA674 /* Pods-ApiAIDemoWatchOSSwift WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiAIDemoWatchOSSwift WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApiAIDemoWatchOSSwift WatchKit App/Pods-ApiAIDemoWatchOSSwift WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		9420835DF1494021374C999E /* Pods-ApiAIDemoWatchOSSwift WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiAIDemoWatchOSSwift WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApiAIDemoWatchOSSwift WatchKit App/Pods-ApiAIDemoWatchOSSwift WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		B355042685D35511F8BFF0C5 /* Pods_ApiAIDemoWatchOSSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiAIDemoWatchOSSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1010B0E1C92861900A08A86 /* LanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		E15FAB4F1C7DDCAF000CAA48 /* ClockKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ClockKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/System/Library/Frameworks/ClockKit.framework; sourceTree = DEVELOPER_DIR; };
 		E15FAB9C1C7DF9F6000CAA48 /* ComplicatonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicatonController.swift; sourceTree = "<group>"; };
 		E1698DEB1C835DCA0033A6F0 /* VoiceButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceButtonViewController.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 			children = (
 				E1698DEB1C835DCA0033A6F0 /* VoiceButtonViewController.swift */,
 				E1B663B31C868C7F004504BD /* ListsViewController.swift */,
+				E1010B0E1C92861900A08A86 /* LanguageViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 				E1DCF9261C8C259F007495E7 /* TableViewCell.swift in Sources */,
 				E1DCF9241C8BF22B007495E7 /* ApiAIResultInterpreter.swift in Sources */,
 				E1B663BC1C86A0A6004504BD /* ApiAIDemoWatchOSSwift.xcdatamodeld in Sources */,
+				E1010B0F1C92861900A08A86 /* LanguageViewController.swift in Sources */,
 				5819CEB51BD7798100CBF9C5 /* AppDelegate.swift in Sources */,
 				E1698DFA1C8475CA0033A6F0 /* CoreDataStackManager.swift in Sources */,
 			);

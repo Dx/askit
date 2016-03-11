@@ -3,7 +3,7 @@
 //  Askit
 //
 //  Created by Dx on 08/03/16.
-//  Copyright © 2016 Kuragin Dmitriy. All rights reserved.
+//  Copyright © 2016 Palmera. All rights reserved.
 //
 
 import Foundation
